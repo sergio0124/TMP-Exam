@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WjB2Y8AmrU/Gri7EXEuMuQ896/dscK/wGKNXsQoD1ngLLVG4YC2J9uIkthNp74tB3p7jre1NKMTBbOwcvs+UKg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamListImplement\\ExamListImplement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

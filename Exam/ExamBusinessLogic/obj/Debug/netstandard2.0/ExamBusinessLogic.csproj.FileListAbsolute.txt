@@ -1,0 +1,9 @@
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\bin\Debug\netstandard2.0\ExamBusinessLogic.deps.json
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\bin\Debug\netstandard2.0\ExamBusinessLogic.dll
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\bin\Debug\netstandard2.0\ExamBusinessLogic.pdb
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\obj\Debug\netstandard2.0\ExamBusinessLogic.csprojAssemblyReference.cache
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\obj\Debug\netstandard2.0\ExamBusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\obj\Debug\netstandard2.0\ExamBusinessLogic.AssemblyInfo.cs
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\obj\Debug\netstandard2.0\ExamBusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\obj\Debug\netstandard2.0\ExamBusinessLogic.dll
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamBusinessLogic\obj\Debug\netstandard2.0\ExamBusinessLogic.pdb

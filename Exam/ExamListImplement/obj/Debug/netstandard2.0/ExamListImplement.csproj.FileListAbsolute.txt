@@ -1,0 +1,12 @@
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\bin\Debug\netstandard2.0\ExamListImplement.deps.json
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\bin\Debug\netstandard2.0\ExamListImplement.dll
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\bin\Debug\netstandard2.0\ExamListImplement.pdb
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\bin\Debug\netstandard2.0\ExamBusinessLogic.dll
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\bin\Debug\netstandard2.0\ExamBusinessLogic.pdb
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.csprojAssemblyReference.cache
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.AssemblyInfoInputs.cache
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.AssemblyInfo.cs
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.csproj.CoreCompileInputs.cache
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.csproj.CopyComplete
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.dll
+C:\Users\Mvideo\Desktop\4 семестр\Технологии программирования\Экзамен\Practice\Exam\ExamListImplement\obj\Debug\netstandard2.0\ExamListImplement.pdb

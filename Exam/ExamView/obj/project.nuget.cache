@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "R63oFHZuK026AjxNJNyrH9zreGKf42j5o+mrLHjqViul2khclgnu1dJcTID+iDhTcGzyWd9orQS/aMoiM6djOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamView\\ExamView.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mvideo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Mvideo\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512"
+  ],
+  "logs": []
+}
