@@ -26,7 +26,15 @@ namespace ExamView
 
         private void FormMainClasses_Load(object sender, EventArgs e)
         {
-            LoadData();
+            try
+            {
+                Program.ConfigGrid(logic.Read(null), dataGridView);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK,
+               MessageBoxIcon.Error);
+            }
         }
 
         private void LoadData()

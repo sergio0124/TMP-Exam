@@ -1,4 +1,5 @@
 ﻿using ExamBusinessLogic.BindingModels;
+using ExamBusinessLogic.Enums;
 using ExamBusinessLogic.Interfaces;
 using ExamBusinessLogic.ViewModels;
 using ExamDatabaseImplement.Models;
@@ -28,7 +29,10 @@ namespace ExamDatabaseImplement.Implements
             {
                 return context.MainClasses
                     .Include(rec=>rec.ExtraClasses)
-                    .Where(rec => rec.Field1 == model.Field1)
+                    .Where(rec => (model.DateFrom.HasValue 
+                    && model.DateTo.HasValue 
+                    && rec.DateCreate >= model.DateFrom 
+                    && rec.DateCreate <= model.DateTo))
                     .Select(CreateModel).ToList();
             }
         }
@@ -121,9 +125,9 @@ namespace ExamDatabaseImplement.Implements
 
         private MainClassViewModel CreateModel(MainClass MainClass)
         {
-            Dictionary<int, string> dict = new Dictionary<int, string>();
+            Dictionary<int, (string, MyEnum, DateTime)> dict = new Dictionary<int, (string, MyEnum, DateTime)>();
             MainClass.ExtraClasses
-                .ForEach(rec => dict.Add((int)rec.Id, rec.Field1.ToString()));
+                .ForEach(rec => dict.Add((int)rec.Id, (rec.Field1.ToString(),rec.Type,rec.DateCreate)));
             return new MainClassViewModel
             {
                 Id = (int)MainClass.Id,

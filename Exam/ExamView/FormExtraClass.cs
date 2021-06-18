@@ -4,6 +4,7 @@ using ExamBusinessLogic.Enums;
 using ExamBusinessLogic.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Unity;
 
@@ -57,13 +58,13 @@ namespace ExamView
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxField1.Text))
+            if (!Regex.IsMatch(textBoxField1.Text, @""))
             {
                 MessageBox.Show("Заполните поле Field1", "Ошибка",
                MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (string.IsNullOrEmpty(textBoxField2.Text))
+            if (!Regex.IsMatch(textBoxField1.Text, @""))
             {
                 MessageBox.Show("Заполните поле Field1", "Ошибка",
                MessageBoxButtons.OK, MessageBoxIcon.Error);

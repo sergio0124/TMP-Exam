@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExamBusinessLogic.BusinessLogics;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +16,11 @@ namespace ExamView
     {
         [Dependency]
         public new IUnityContainer Container { get; set; }
-        public FormMain()
+        public ReportBusinessLogic logic;
+        public FormMain(ReportBusinessLogic logic)
         {
             InitializeComponent();
+            this.logic = logic;
         }
 
         private void extraClassToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,6 +32,12 @@ namespace ExamView
         private void mainClassToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = Container.Resolve<FormMainClasses>();
+            form.ShowDialog();
+        }
+
+        private void отчётToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Container.Resolve<FormReport>();
             form.ShowDialog();
         }
     }

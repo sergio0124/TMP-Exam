@@ -33,6 +33,7 @@ namespace ExamView
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.extraClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отчётToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@ namespace ExamView
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.справочникиToolStripMenuItem});
+            this.справочникиToolStripMenuItem,
+            this.отчётToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -59,16 +61,23 @@ namespace ExamView
             // extraClassToolStripMenuItem
             // 
             this.extraClassToolStripMenuItem.Name = "extraClassToolStripMenuItem";
-            this.extraClassToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.extraClassToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.extraClassToolStripMenuItem.Text = "ExtraClass";
             this.extraClassToolStripMenuItem.Click += new System.EventHandler(this.extraClassToolStripMenuItem_Click);
             // 
             // mainClassToolStripMenuItem
             // 
             this.mainClassToolStripMenuItem.Name = "mainClassToolStripMenuItem";
-            this.mainClassToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mainClassToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.mainClassToolStripMenuItem.Text = "MainClass";
             this.mainClassToolStripMenuItem.Click += new System.EventHandler(this.mainClassToolStripMenuItem_Click);
+            // 
+            // отчётToolStripMenuItem
+            // 
+            this.отчётToolStripMenuItem.Name = "отчётToolStripMenuItem";
+            this.отчётToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.отчётToolStripMenuItem.Text = "Отчёт";
+            this.отчётToolStripMenuItem.Click += new System.EventHandler(this.отчётToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -92,5 +101,6 @@ namespace ExamView
         private System.Windows.Forms.ToolStripMenuItem справочникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem extraClassToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mainClassToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отчётToolStripMenuItem;
     }
 }

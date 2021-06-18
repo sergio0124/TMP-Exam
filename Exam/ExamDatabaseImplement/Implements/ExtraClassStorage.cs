@@ -27,7 +27,7 @@ namespace ExamDatabaseImplement.Implements
             using (var context = new ExamDatabase())
             {
                 return context.ExtraClasses
-                    .Where(rec => rec.Field1 == model.Field1)
+                    .Where(rec => rec.Field1 == model.Field1 || rec.MainClassId==model.MainClassId)
                     .Select(CreateModel).ToList();
             }
         }

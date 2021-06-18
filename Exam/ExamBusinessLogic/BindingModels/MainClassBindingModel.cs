@@ -9,5 +9,7 @@ namespace ExamBusinessLogic.BindingModels
         public int Field1 { set; get; }
         public string Field2 { set; get; }
         public DateTime DateCreate { set; get; }
+        public DateTime? DateFrom { get; set; }
+        public DateTime? DateTo { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Unity;
@@ -34,6 +35,27 @@ namespace ExamView
             {
                 try
                 {
+                    Program.ConfigGrid(extralogic.Read(new ExtraClassBindingModel {
+                        MainClassId = (int)id
+                    }), dataGridView);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                LoadData();
+            }
+        }
+
+        private void LoadData() {
+            if (id.HasValue)
+            {
+                try
+                {
                     var view = logic.Read(new MainClassBindingModel { Id = id })?[0];
                     if (view != null)
                     {
@@ -41,7 +63,7 @@ namespace ExamView
                         textBoxField2.Text = view.Field2;
                         foreach (var row in view.Dictionary)
                         {
-                            dataGridView.Rows.Add(new object[] {row.Key, row.Value});
+                            dataGridView.Rows.Add(new object[] { row.Key, row.Value });
                         }
                     }
                 }
@@ -55,13 +77,13 @@ namespace ExamView
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxField1.Text))
+            if (!Regex.IsMatch(textBoxField1.Text, @""))
             {
                 MessageBox.Show("Заполните Field1", "Ошибка", MessageBoxButtons.OK,
                MessageBoxIcon.Error);
                 return;
             }
-            if (string.IsNullOrEmpty(textBoxField2.Text))
+            if (!Regex.IsMatch(textBoxField1.Text, @""))
             {
                 MessageBox.Show("Заполните Field2", "Ошибка", MessageBoxButtons.OK,
                MessageBoxIcon.Error);

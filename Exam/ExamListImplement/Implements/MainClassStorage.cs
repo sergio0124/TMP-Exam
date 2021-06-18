@@ -1,4 +1,5 @@
 ﻿using ExamBusinessLogic.BindingModels;
+using ExamBusinessLogic.Enums;
 using ExamBusinessLogic.Interfaces;
 using ExamBusinessLogic.ViewModels;
 using ExamListImplement.Models;
@@ -22,7 +23,10 @@ namespace ExamListImplement.Implements
         public List<MainClassViewModel> GetFilteredList(MainClassBindingModel model)
         {
             return (model == null) ? null : source.MainClasses
-                .Where(rec => rec.Field1 == model.Field1)
+                .Where(rec => (model.DateFrom.HasValue 
+                && model.DateTo.HasValue 
+                && rec.DateCreate >= model.DateFrom 
+                && rec.DateCreate <= model.DateTo))
                 .Select(CreateModel).ToList();
         }
 
@@ -83,16 +87,17 @@ namespace ExamListImplement.Implements
 
         private MainClassViewModel CreateModel(MainClass MainClass)
         {
-            Dictionary<int, string> dict = new Dictionary<int, string>();
+            Dictionary<int, (string, MyEnum, DateTime)> dict = 
+                new Dictionary<int, (string, MyEnum, DateTime)>();
             source.ExtraClasses
-                .ForEach(rec => dict.Add((int)rec.Id, rec.Field1.ToString()));
+                .ForEach(rec => dict.Add((int)rec.Id, (rec.Field1.ToString(), rec.Type, rec.DateCreate)));
             return new MainClassViewModel
             {
                 Id = (int)MainClass.Id,
                 Field1 = MainClass.Field1,
                 Field2 = MainClass.Field2,
                 Dictionary = dict,
-                DateCreate=MainClass.DateCreate
+                DateCreate = MainClass.DateCreate
             };
         }
     }
