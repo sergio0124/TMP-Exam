@@ -64,6 +64,84 @@
         }
       }
     },
+    "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamDatabaseImplement\\ExamDatabaseImplement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamDatabaseImplement\\ExamDatabaseImplement.csproj",
+        "projectName": "ExamDatabaseImplement",
+        "projectPath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamDatabaseImplement\\ExamDatabaseImplement.csproj",
+        "packagesPath": "C:\\Users\\Mvideo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamDatabaseImplement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mvideo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamBusinessLogic\\ExamBusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamBusinessLogic\\ExamBusinessLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamListImplement\\ExamListImplement.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -155,6 +233,9 @@
               "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamBusinessLogic\\ExamBusinessLogic.csproj": {
                 "projectPath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamBusinessLogic\\ExamBusinessLogic.csproj"
               },
+              "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamDatabaseImplement\\ExamDatabaseImplement.csproj": {
+                "projectPath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamDatabaseImplement\\ExamDatabaseImplement.csproj"
+              },
               "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamListImplement\\ExamListImplement.csproj": {
                 "projectPath": "C:\\Users\\Mvideo\\Desktop\\4 семестр\\Технологии программирования\\Экзамен\\Practice\\Exam\\ExamListImplement\\ExamListImplement.csproj"
               }
@@ -165,6 +246,20 @@
       "frameworks": {
         "net472": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
             "Unity": {
               "target": "Package",
               "version": "[5.11.10, )"

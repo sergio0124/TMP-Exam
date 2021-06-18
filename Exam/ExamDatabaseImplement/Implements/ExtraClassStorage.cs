@@ -118,7 +118,7 @@ namespace ExamDatabaseImplement.Implements
             ExtraClass.MainClassId = mainClass.Id;
             ExtraClass.MainClassName = mainClass.Field1.ToString();
             ExtraClass.MainClass = mainClass;
-            context.Add(ExtraClass);
+            if (ExtraClass.Id==0) context.Add(ExtraClass);
             return ExtraClass;
         }
 

@@ -120,12 +120,27 @@
       <Project>{765a4a54-d464-48e3-acd1-93a34680376e}</Project>
       <Name>ExamBusinessLogic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ExamDatabaseImplement\ExamDatabaseImplement.csproj">
+      <Project>{865c3cf5-4373-4b32-9173-ed4ac89657e4}</Project>
+      <Name>ExamDatabaseImplement</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ExamListImplement\ExamListImplement.csproj">
       <Project>{9d4aca07-f9d1-4e68-b537-dfc872f2d54b}</Project>
       <Name>ExamListImplement</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore">
+      <Version>3.1.13</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer">
+      <Version>3.1.13</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+      <Version>3.1.13</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Unity">
       <Version>5.11.10</Version>
     </PackageReference>

@@ -115,7 +115,7 @@ namespace ExamDatabaseImplement.Implements
             MainClass.DateCreate = model.DateCreate;
             MainClass.Field1 = model.Field1;
             MainClass.Field2 = model.Field2;
-            context.Add(MainClass);
+            if (MainClass.Id == 0) { context.Add(MainClass); }
             return MainClass;
         }
 
